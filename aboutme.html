@@ -28,8 +28,12 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+li a:hover:not(.active) {
     background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
 <title>Page Title</title>
 </style>
@@ -37,11 +41,12 @@ li a:hover {
 <body>
 
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">About Me</a></li>
-  <li><a href="#contact">Projects</a></li>
-  <li><a href="#about">Links</a></li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Projects</a></li>
+  <li><a href="#contact">Links</a></li>
+  <li style="float:right"><a class="active" href="#about">About Me</a></li>
 </ul>
+
 
 <h1 style="font-family:courier;color:white;"><center>RAVEN SIMS<br><q style="font-size:16px;color:white;"><i>Be fearless in the pursuit of what sets your soul on fire.</center></i></q></h1>
 
